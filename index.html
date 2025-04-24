@@ -6,14 +6,11 @@
     <title>:TGSRTC BUS PASS:</title>
 </head>
 <body>
-   <form action="" method="get">             
+   <form action="" method="get" enctype="multipart/form-data" novalidate autotype="off">             
     <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqg4D54bqzRwcDgbXXyGyC2N_vQDs-eIvJ-l6JAYIPEJj05mztarVTxnAw572ehthXmlE&usqp=CAU" alt="" height="150" width="250"> 
         <h1><b style="color: blue;">TELANGANA STATE ROAD TRANSPORT CORPORATION</b></h1>
         <h1>GENERAL BUS PASS APPLICATION</h1></center>
      
-  
-      
-  
           <fieldset>
            <legend style="background-color:darkviolet"><b style="color: aliceblue;">Aplication Details</b></legend><br>
           <form action="./sucessful login.html">
@@ -41,13 +38,13 @@
            <div class="form-row"></div>
            <br>
            <label for="phoneno">what's up Number*</label>
-           <input type="phoneno" id="phoneno" placeholder="Enter What's up No." pattern="(?=.*[0-9]){10-12}">
+           <input type="tel" id="phoneno" placeholder="Enter What's up No." pattern="(?=.*[0-9]){10-12}">
            <label for="email">E-mail ID*</label>
-           <input type="email" id="email" placeholder="Enter E-Mail Id" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(.@){25-30}">
+           <input type="text" id="email" placeholder="Enter E-Mail Id" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(.@){25-30}">
            <div class="form-row"></div>
            <br>
            <label for="file">Photo*</label>
-           <input type="file" id="file" required><br>
+           <input type="file" id="file" accept=".docx,.pdf" multiple required><br>
   
           </fieldset>
           </form>
@@ -61,7 +58,7 @@
             <label for="">Applicant Address*</label>
             <textarea rows="5" cols="30"></textarea>
              District*<select name="" id="">
-            <option value="" ><<< select District >>></option>
+            <option value="" disabled selected ><<< select District >>></option>
             <option >Adhilabad</option>
             <option >Hyderabad</option>
             <option >Nizamabad</option>
@@ -74,7 +71,7 @@
             <div class="form-row"></div>
             <br>
             Mandal*<select name="" id="">
-                <option value="" ><<< select Mandal >>> </option>
+                <option value=""  disabled selected ><<< select Mandal >>> </option>
                 <option >Dichpally</option>
                 <option >Indalwai</option>
                 <option >Bheemgal</option>
@@ -86,7 +83,7 @@
                 </select>
 
             Village*<select name="" id="">
-                <option value="" ><<< select Village >>></option>
+                <option value=""  disabled selected><<< select Village >>></option>
                 <option >Ansanpally</option>
                 <option >Chandranpally</option>
                 <option >Gannaram<option>
@@ -106,7 +103,7 @@
             <div class="form-row"></div>
             <br>
             <label for="pincode">Pincode*</label>
-            <input type="text" name="" id="pincode" required placeholder="Enter Pincode" pattern="(?=.*[0-9]{4-6})"><br>
+            <input type="tel" name="" id="pincode" required placeholder="Enter Pincode" pattern="(?=.*[0-9]{4-6})"><br>
             <div class="form-row"></div>
             <br>
          </fieldset>   
@@ -121,7 +118,7 @@
         <div class="form-row"></div>
             <br>
         Pass Type*<select name="" id="">
-            <option value="" > ---select pass type---</option>
+            <option value=""  disabled selected> ---select pass type---</option>
             <option >GREATER PASS</option>
             <option >GENERAL ORDINARY ROUTE PASS MTLY</option>
             <option>GENERAL METRO EXPRESS ROUTE PASS MTLY</option> 
@@ -133,13 +130,13 @@
             <br>
 
             From Place District*<select name="" id="">
-                <option value="" > ---- select ---- </option>
+                <option value=""  disabled selected> ---- select ---- </option>
                 <option >Nizamabad</option>
                 <option >Hyderabad</option>
                 <option >kamareddy</option>
                 </select>
             To Place District*<select name="" id="">
-                    <option value="" >---- select ----</option>
+                    <option value=""  disabled selected>---- select ----</option>
                     <option >Nizamabad</option>
                     <option >Hyderabad</option>
                     <option >Kamareddy</option>
@@ -164,20 +161,20 @@
     <fieldset>
         <legend style="background-color: greenyellow;"><b style="color:orangered ;"> Mode of payment & Pass collection</b></legend>
         Payment Mode*<select name="" id="">
-            <option value="" >select payment mode</option>
+            <option value=""  disabled selected>select payment mode</option>
             <option >Payment at counter</option>
             </select>
             <div class="form-row"></div>
             <br>
 
              Pass delivery Mode*<select>
-                <option value="" >select Pass delivery Mode</option>
+                <option value=""  disabled selected>select Pass delivery Mode</option>
                 <option >At counter</option>
             </select>
             <div class="form-row"></div>
             <br>
         Center at which you want to collect pass*<select name="" id="">
-            <option value="" > ---- select ---- </option>
+            <option value=""  disabled selected > ---- select ---- </option>
             <option >RTC DEPO 1--NZB [24/04/2025]</option>
             <option >RTC DEPO 2--NZB [26/04/2025]</option>
             </select>
